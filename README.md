@@ -4,7 +4,7 @@ CodeNote is a powerful and intuitive application designed for taking notes speci
 
 ## Screenshot
 
-![Screenshot](path/to/screenshot.png)
+![Screenshot](./public/screenshot.png)
 
 ## Features
 
