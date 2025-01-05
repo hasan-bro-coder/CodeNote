@@ -1,0 +1,100 @@
+.todo-con {
+  padding: 10px;
+  border: 1px solid #403e6a;
+  border-radius: 8px;
+  min-height: 100px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.todo-con button {
+  background-color: #181818;
+  color: white;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  font-weight: 200;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid white;
+}
+.todo-con .form button {
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+.todo-con .form input {
+  background-color: #181818;
+  color: white;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  font-weight: 200;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid white;
+  outline: none;
+  margin-bottom: 30px;
+}
+.todo-con input {
+  background-color: #181818;
+  color: white;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  font-weight: 200;
+  padding: 6px;
+  width: 120px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid white;
+}
+.todo-con ul {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.todo-con li {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.todo-con li .hid {
+  opacity: 0;
+  pointer-events: none;
+  transition: 500ms;
+  border: 1px solid rgb(247, 226, 226);
+  color: rgb(247, 226, 226);
+}
+.todo-con li:hover .hid {
+  opacity: 1;
+  pointer-events: all;
+}
+.todo-con li input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  background-color: #181818;
+  color: white;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  font-weight: 200;
+  border-radius: 4px;
+  border: 1px solid white;
+}
+.todo-con li input[type=checkbox]:checked::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}/*# sourceMappingURL=todo.css.map */

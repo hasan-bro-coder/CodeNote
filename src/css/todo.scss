@@ -1,0 +1,108 @@
+.todo-con {
+  padding: 10px;
+  border: 1px solid #403e6a;
+  border-radius: 8px;
+  min-height: 100px;
+  max-height: 90vh;
+  overflow-y: auto;
+  // width:
+  button {
+    background-color: #181818;
+    color: white;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    font-weight: 200;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid white;
+  }
+  .form button {
+    margin-left: 10px;
+    margin-bottom: 30px;
+  }
+  .form input {
+    background-color: #181818;
+    color: white;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    font-weight: 200;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid white;
+    outline: none;
+    margin-bottom: 30px;
+  }
+
+  input {
+    background-color: #181818;
+    color: white;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    font-weight: 200;
+    padding: 6px;
+    width: 120px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid white;
+  }
+  ul {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+  }
+  li {
+    // text-decoration: none;
+    // font-style: normal;
+    .hid {
+      opacity: 0;
+      pointer-events: none;
+      transition: 500ms;
+      border: 1px solid rgb(247, 226, 226);
+      color: rgb(247, 226, 226);
+    }
+    &:hover {
+      .hid {
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
+    list-style: none;
+    display: flex;
+    input[type="checkbox"] {
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border: 1px solid white;
+      border-radius: 4px;
+      position: relative;
+      cursor: pointer;
+
+      &:checked::before {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 6px;
+        width: 6px;
+        height: 12px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+      }
+      margin: 0;
+      padding: 0;
+      background-color: #181818;
+      color: white;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 12px;
+      font-weight: 200;
+      border-radius: 4px;
+      border: 1px solid white;
+    }
+    // height: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+}
