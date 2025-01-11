@@ -1,0 +1,30 @@
+.img-con{
+    border: 1px solid #403e6a;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    scrollbar-width: none;
+    button{
+        padding: 5px;
+    }
+    .drag-con{
+        img{
+            &.red{
+                position: absolute;
+                cursor: move;
+                border: 2px solid rgba(255, 255, 255, 0.452);
+            border-radius: 8px;
+            }
+            border-radius: 8px;
+            scale: 1.5;
+        }
+        width: 100vw;
+        height: 100%;
+        // height: calc(100vh - 100px);
+        overflow-x: auto;
+        overflow-y: auto;
+        scrollbar-width: none;
+    }
+}

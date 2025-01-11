@@ -23,7 +23,7 @@ function Draw() {
 
   return (
     <>
-      <div style={{ height: "100vh", width: "500px" }}>
+      <div style={{ height: "100%", width: "500px" }}>
         <Excalidraw
           // initialData={initialData}
           // excalidrawAPI={(api) => setExcalidrawAPI(api)}

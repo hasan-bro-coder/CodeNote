@@ -64,25 +64,69 @@ body {
   min-height: 100vh;
   color: var(--color-text);
   background: var(--color-background);
-  transition:
-    color 0.5s,
-    background-color 0.5s;
+  transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
-  font-family:
-    Inter,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   font-size: 15px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.mainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.con {
+  width: 100vw;
+  height: calc(100vh - 45px);
+}
+nav {
+  // position: fixed;
+  // top: 0px;
+  // left: 0px;
+  width: 100vw;
+  height: 40px;
+  padding: 10px;
+  // opacity: 0;
+  background-color: #181818;
+  z-index: 200000000000000000;
+  border: 1px solid #403e6a;
+  border-radius: 8px;
+  margin-bottom: 2px;
+  .tabs {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
+  }
+  button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 2px 20px;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    border-color: #ffffff;
+  }
+  button:hover {
+    border-color: #403e6a;
+  }
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+}
+// nav:hover{
+//   opacity: 1;
+//   transition: 400ms;
+//   /* pointer-events: all; */
+// }
